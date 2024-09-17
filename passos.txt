@@ -14,8 +14,6 @@ dotnet ef database update
 
 
 
-
-
 dotnet watch run
 ------------------------------------------
 //PArte extra do nunes
