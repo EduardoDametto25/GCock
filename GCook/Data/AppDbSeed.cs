@@ -123,6 +123,10 @@ public class AppDbSeed
             new Ingrediente() {
                 Id = 13,
                 Nome = "Cheddar"
+            },
+            new Ingrediente() {
+                Id = 14,
+                Nome = "Azeite"
             }
         };
         builder.Entity<Ingrediente>().HasData(ingredientes);
@@ -139,7 +143,8 @@ public class AppDbSeed
                 Rendimento = 3,
                 TempoPreparo = "20 minutos",
                 Foto = "/img/receitas/1.jpg",
-                Preparo = ""
+                Preparo = "Comece pela preparação dos ingredientes, pique os pimentõeas e a cebola em pequenos cubos, se preferir você também pode usar um processador de alimentos."
+                        + "Coloque a carne moida pra fritar em uma panela com um pouco de azeite."
             }
         };
         builder.Entity<Receita>().HasData(receitas);
