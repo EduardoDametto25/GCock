@@ -1,12 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net.Mail;
 
-namespace Helpers
+namespace GCook.Helpers;
+
+public static class Helper
 {
-    public class Helper
+    public static bool IsValidEmail(string email)
     {
-        
+        try
+        {
+            MailAddress m = new(email);
+            return true;
+        }
+        catch (FormatException)
+        {
+            return false;
+        }
     }
 }
