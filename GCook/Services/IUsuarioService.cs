@@ -5,5 +5,9 @@ namespace GCook.Services;
 
 public interface IUsuarioService
 {
-    public interface 
+    Task<UsuarioVM> GetUsuarioLogado();
+    Task<SignInResult> LoginUsuario(LoginVM login);
+    Task LogoffUsuario();
+    Task<List<string>> RegistrarUsuario(RegistroVM registro);
+    Task<bool> ConfirmarEmail(string userId, string code);
 }
