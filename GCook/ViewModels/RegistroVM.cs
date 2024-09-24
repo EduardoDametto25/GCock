@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using System.Data;
 
 namespace GCook.ViewModels;
+
 public class RegistroVM
 {
     [Display(Name = "Nome Completo", Prompt = "Informe seu Nome Completo")]
@@ -32,6 +32,8 @@ public class RegistroVM
     public string ConfirmacaoSenha { get; set; }
 
     public IFormFile Foto {get; set; }
+
     public bool Termos { get; set; } = false;
+    
     public bool Enviado { get; set; } = false;
 }
