@@ -36,5 +36,4 @@ public class Receita
     public Categoria Categoria { get; set; }
 
     public ICollection<ReceitaIngrediente> Ingredientes { get; set; }
-    
 }
