@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GCook.Controllers;
@@ -10,7 +10,7 @@ public class AdminControler : Controller
 
     public AdminControler(ILogger<AdminControler> logger)
     {
-        _logger = _logger;
+        _logger = logger;
     }
 
     public IActionResult Index()

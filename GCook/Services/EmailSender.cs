@@ -4,7 +4,7 @@ using System.Net.Mail;
 namespace GCook.Services;
 public class  EmailSender : IEmailSender
 {
-    public async Task SendEmailAsyng(string emailAdress, string subject, string htmlMessage)
+    public async Task SendEmailAsync(string emailAdress, string subject, string htmlMessage)
     {
         var mail = "gcook.app@outloock.com";
         var pw = "QV3E4khpZBEcL7K";

@@ -36,7 +36,7 @@ public class AccountController : Controller
         if (ModelState.IsValid)
         {
             var result = await _usuarioService.LoginUsuario(login);
-            if (result.succeeded)
+            if (result.Succeeded)
                 return LocalRedirect(login.UrlRetorno);
             if (result.IsLockedOut)
                 return RedirectToAction("Lockout");

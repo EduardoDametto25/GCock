@@ -23,7 +23,8 @@ public class UsuarioService : IUsuarioService
     private readonly IWebHostEnvironment _hostEnvironment;
     private readonly IEmailSender _emailSender;
     private readonly ILogger<UsuarioService> _logger;
-
+    private SignInManager<IdentityUser> signInManager;
+    private Stream stream;
 
     public UsuarioService(
         AppDbContext contexto,
